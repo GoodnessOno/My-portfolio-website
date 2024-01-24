@@ -42,7 +42,7 @@ body {
   box-sizing: border-box;
   font-style: oblique;
 }
-.blog {
+.blog h1 {
   font-style: oblique;
 }
 .fade {
@@ -51,7 +51,25 @@ body {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.skills,
+.programming-languages,
+.tools {
+  flex: 1 0 0;
+  margin: 20px; /* Add space to the right of the info column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  box-sizing: border-box;
+  font-style: oblique;
+}
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
