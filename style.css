@@ -21,7 +21,7 @@ header {
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: snow;
+  background-color: beige;
   color: navy;
 }
 
@@ -40,11 +40,29 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
-
+nav ul ul {
+  display: none;
+}
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 10px;
   color: aqua;
+  position: relative;
+}
+nav ul li ul li {
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  color: floralwhite;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(10, 2, 31);
+  min-width: 900px;
+  min-height: 900px;
 }
 nav a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -54,13 +72,18 @@ nav a {
 }
 nav ul li a {
   text-decoration: none;
-  color: rgb(169, 208, 240);
+  color: rgb(191, 186, 243);
+  display: inline-block;
+  padding: 0 10px;
 }
 nav:hover {
   background-color: #08011a; /* Change this to the color you want */
 }
 nav a:hover {
   color: rgb(21, 219, 71);
+}
+nav ul li:hover ul {
+  display: block;
 }
 .mySlides {
   display: none;
@@ -143,5 +166,43 @@ nav a:hover {
   }
   to {
     opacity: 1;
+  }
+}
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.column {
+  width: 100%;
+  padding: 15px;
+}
+
+/* For devices with a screen width greater than 600px */
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* For devices with a screen width greater than 900px */
+@media (min-width: 900px) {
+  .column {
+    width: 33.33%;
+    float: left;
+  }
+}
+#hamburger-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #nav-links {
+    display: none;
+  }
+
+  #hamburger-btn {
+    display: block;
   }
 }
