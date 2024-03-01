@@ -1,3 +1,5 @@
 {
-  "cmake.configureOnOpen": true
+  "cmake.configureOnOpen": true,
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/626005ef-e67b-4eb1-bcf6-453b3f3c23a7/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/objectifdegoodness",
+  "appService.deploySubpath": "."
 }
