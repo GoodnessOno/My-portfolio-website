@@ -1,5 +1,6 @@
 # We're going to use some tools to build our chatbot.
 import nltk  # This tool helps us understand words.
+import sklearn
 from sklearn.feature_extraction.text import CountVectorizer  # This tool helps us count words.
 from sklearn.metrics.pairwise import cosine_similarity  # This tool helps us compare sentences.
 import random  # This tool helps us do things randomly.
