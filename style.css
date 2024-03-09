@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav ul li {
  display: inline;
@@ -12,8 +15,38 @@
   margin: 0 auto;
   width: 100%;
   height: auto;
+
 }
+
 .header_img img {
   max-width: 100%;
   height: auto;
+}
+.main_text {
+  margin: auto;
+  justify-content: space-around;
+  align-content: space-around;
+  align-content: center;
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main_text h3 {
+  font-style: italic;
+}
+.footer {
+  background-color: rgba(87, 209, 6, 0.897);
+}
+.main_footer_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sub_footer_text {
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
 }
