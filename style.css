@@ -17,24 +17,24 @@
   height: auto;
 
 }
-
 .header_img img {
   max-width: 100%;
   height: auto;
 }
-.main_text {
-  margin: auto;
-  justify-content: space-around;
-  align-content: space-around;
-  align-content: center;
-  display: block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.page_first_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-size: larger;
+  image-rendering: auto;
+  align-content: flex-start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
-.main_text h3 {
-  font-style: italic;
-}
+
 .footer {
-  background-color: rgba(87, 209, 6, 0.897);
+  background-color: rgba(71, 216, 241, 0.897);
 }
 .main_footer_text {
   display: flex;
@@ -49,4 +49,55 @@
   font-style: italic;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: small;
+}
+.blog-introduction {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  justify-content: space-around;
+  align-content: space-around;
+  align-content: center;
+}
+.main_text h1 h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: xx-large;
+}
+/* style your form to be in the middle with a shadow, the above styling is not working */
+.form {
+  border-style: outset;
+  border-color: rgb(2, 2, 48);
+  border-width: thick;
+  border-radius: 20px;
+  padding-left: 50px;
+  text-align: center;
+  font-size: larger;
+}
+.dropdown {
+  cursor: pointer;
+}
+.sub-nav {
+  display: none;
+  position: absolute;
+  background-color: rgb(204, 248, 248);
+  width: max-content;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.sub-nav a {
+  color: black;
+  padding: 11px 15px;
+  text-decoration: none;
+  display: block;
+}
+.sub-nav a:hover {
+  background-color: aqua;
+}
+.dropdown:hover .sub-nav {
+  display: block;
+}
+.dropdown:hover .main-nav {
+  background-color: yellowgreen;
 }

@@ -4,14 +4,55 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOODNESS ONONOGBU's VIRTUAL JOURNAL</title>
+    <link rel="icons8" href=""><!-- link your logo in the href side of the favicon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-   <div class="blog_header_text">
+   <div class="header">
     <header>
-      <div>
-        <h1>GOODNESS ONONOGBU's VIRTUAL JOURNAL</h1>
+      <div class="header_text">
+        <h1>GOODNESS ONONOGBU's BLOG</h1>
+        <div class="nav">
+          <nav>
+            <ul>
+            <div>
+              <li class="dropdown">
+                <a href="artificialintelligence.html" class="main-nav">ARTIFICIAL INTELLIGENCE |</a>
+                <!-- style in css to create dropdown menu for links in navigation -->
+                <div class="sub-nav">
+                <a href="generativeai.html">GENERATIVE AI</a>
+                <!-- add calendly and linkedin links -->
+                </div>
+              </li>
+              <li class="dropdown"> 
+                <a href="robotics.html" class="main-nav">| ROBOTICS |</a>
+              </li>
+              <li class="dropdown">
+                <a href="softwaredevelopment.html" class="main-nav">| SOFTWARE DEVELOPMENT |</a>
+              </li>
+              <li class="dropdown">
+                <a href="cybersecurity.html" class="main-nav">| CYBERSECURITY |</a>
+              </li>
+            </div>
+            </ul>
+          </nav>
+          </div>
+      </div>
+      <!-- creating a search bar -->
+      <div class="search-container">
+        <form role="search" id="form">
+          <input type="search" name="q" id="query" placeholder="Search...">
+        </form>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+
+          </div>
+
+        </div>
+
       </div>
       <div class="header_img">
         <img src="Goodness Ononogbu blog banner.png" alt="tech-writing image">
@@ -19,12 +60,53 @@
       <!-- insert header img that depicts tech writing -->
     </header>
    </div>
+   <main>
+    <h1></h1>
+    <pre>
+      The world is my theatre and this website is one of my many virtual stages. 
+      While my projects page <!-- this 'pre' tag will be used to write code like phrases --> displays my works in the most practical way possible, this section allows me to share my thoughts with you.
+    </pre>
+    <p class="blog-introduction">
+      The world is my theatre and this website is one of my many virtual stages. <br> 
+      While my projects page <!-- insert link to project page and put in button --> displays my works in the most practical way possible, this section allows me to share my thoughts and ideas with you.
+      <!-- Make a comment section on the website for each blog post -->
+    </p>
+    <!-- include dropdown menu for each blog post page and also classify them into sections such as sustainability, cybersecurity, ai software development, robotics etc -->
+    <!-- create a comment section here and secure in database -->
+   </main>
    <div class="footer">
    <footer>
-    <div class="footer_text">
-        <h1>GOODNESS ONONOGBU's VIRTUAL JOURNAL</h1>
+    <div class="main_footer_text">
+        <h1>GOODNESS ONONOGBU&#169</h1>
+        <div class="nav">
+          <nav>
+            <ul>
+            <div>
+              <li class="dropdown">
+                <a href="artificialintelligence.html" class="main-nav">ARTIFICIAL INTELLIGENCE |</a>
+                <!-- style in css to create dropdown menu for links in navigation -->
+                <div class="sub-nav">
+                <a href="generativeai.html">GENERATIVE AI</a>
+                <!-- add calendly and linkedin links -->
+                </div>
+              </li>
+              <li class="dropdown"> 
+                <a href="robotics.html" class="main-nav">| ROBOTICS |</a>
+              </li>
+            </li>
+            <li class="dropdown">
+              <a href="softwaredevelopment.html" class="main-nav">| SOFTWARE DEVELOPMENT |</a>
+            </li>
+            <li class="dropdown">
+              <a href="cybersecurity.html" class="main-nav">| CYBERSECURITY |</a>
+            </li>
+            </div>
+            </ul>
+          </nav>
+          </div>
       </div>
    </footer>
    </div>
+   <script src="script.js"></script>
   </body>
 </html>
