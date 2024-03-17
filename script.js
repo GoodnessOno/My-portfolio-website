@@ -1,4 +1,18 @@
-const button = document.querySelector('#button');
-/* you use const when you're creating a variable that you do not want to change. Confirm the above code and how it relates to your html and css, also confirm the button in html and what it does */
+document.getElementsByClassName("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent the form from submitting
 
-button.onclick = remainInPage /* confirm if this is correct */
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    var data = {
+        "name": name,
+        "email": email,
+        "message": message
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://formspree.io/<EMAIL>", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(data));
+});
