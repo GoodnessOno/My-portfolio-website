@@ -74,7 +74,7 @@
   padding-left: 50px;
   text-align: center;
   font-size: 2rem;
-  max-width: max-content;
+  max-width: 100%;
 }
 .dropdown {
   cursor: pointer;
