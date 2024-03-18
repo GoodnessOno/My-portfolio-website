@@ -62,8 +62,8 @@
 .main_text h1 h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
-  font-style: normal;
-  font-size: xx-large;
+  font-style: italic;
+  font-size: 2rem;
 }
 /* style your form to be in the middle with a shadow, the above styling is not working */
 .form {
@@ -73,7 +73,7 @@
   border-radius: 20px;
   padding-left: 50px;
   text-align: center;
-  font-size: larger;
+  font-size: 2rem;
   width: 100%;
 }
 .dropdown {
