@@ -1,6 +1,3 @@
-* {
-  width: 100%;
-}
 .header_text {
   display: flex;
   justify-content: space-between;
@@ -106,4 +103,7 @@
 }
 .dropdown:hover .main-nav {
   background-color: yellowgreen;
+}
+@media (max-width: 320px) {
+  
 }
