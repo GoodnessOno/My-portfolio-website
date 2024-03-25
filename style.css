@@ -122,6 +122,25 @@
 .dropdown:hover .main-nav {
   background-color: yellowgreen;
 }
+.blog_catalog {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+  background-color: rgb(34, 10, 245);
+}
+
+.catalog {
+  display: inline-block;
+}
+.item {
+  display: inline-block;
+  width: 400px; /* Adjust width of each item as needed */
+  margin-right: 20px; /* Add margin between items */
+}  
+.item img {
+  width: 100%;
+}
 @media (max-width: 320px) {
   
 }
