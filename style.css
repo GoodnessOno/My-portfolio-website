@@ -56,21 +56,6 @@
   /* Add margin to separate it from other elements */
   margin-right: 20px; /* Adjust as needed */
 }
-@keyframes bounceIn {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-  }
-  40% {
-      transform: translateY(-30px);
-  }
-  60% {
-      transform: translateY(-15px);
-  }
-}
-
-.bounce-in {
-  animation: bounceIn 1s ease;
-}
 .nav ul li a {
  display: inline;
  justify-content: space-between;
@@ -152,6 +137,28 @@
 }
 .welcome-text img {
   margin-right: 400px;
+}
+.machine_thinking_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+  margin-bottom: -10px;
+  font-style: italic; 
+  font-family: cursive;
+  font-size: larger;
+  font-weight: bolder;
+}
+.machine_thinking_intro p{
+  font-family: cursive;
+  font-size: larger;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+.machine_thinking_intro img {
+  margin-right: 30px;
+  border-radius: 30px;
 }
 .sub-nav {
   display: none;
