@@ -41,12 +41,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   font-weight: bolder;
   font-style: normal;
   max-width: 100%;
   color: darkblue;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Assuming your search button has a class named "search-button" */
+.search-container {
+  /* Adjust positioning */
+  position: absolute;
+  right: 0;
+  /* Add margin to separate it from other elements */
+  margin-right: 20px; /* Adjust as needed */
+}
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease;
 }
 .nav ul li a {
  display: inline;
@@ -85,7 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   font-weight: bolder;
   font-style: normal;
   color: darkblue;
