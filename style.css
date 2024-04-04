@@ -75,6 +75,8 @@
   max-width: 100%;
   height: auto;
 }
+/* Style blog sections */
+
 .page_first_info {
   display: flex;
   justify-content: space-between;
