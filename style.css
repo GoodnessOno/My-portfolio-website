@@ -230,7 +230,7 @@ background: radial-gradient(circle, rgba(12,190,32,1) 24%, rgba(0,39,255,1) 51%,
   }
 }
 /* Styles for Small Screens */
-@media screen and (min-width: 360px) and (max-width: 767.98px) {
+@media screen and (min-width: 321px) and (max-width: 575.98px) {
   .nav {
       display: none;
       position: absolute;
@@ -247,6 +247,71 @@ background: radial-gradient(circle, rgba(12,190,32,1) 24%, rgba(0,39,255,1) 51%,
 
   .nav-toggle {
       display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  .nav-icon {
+      font-size: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS styles for small devices here */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9; /* Background color for menu */
+    width: 100%;
+    padding: 20px;
+}
+
+.nav.active {
+    display: block;
+}
+
+.nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS styles for medium devices here */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.nav-icon {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.nav-icon {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+
+  .nav-toggle {
+      display: none;
       background: none;
       border: none;
       cursor: pointer;
