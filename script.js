@@ -74,3 +74,11 @@ document.addEventListener("DOMContentLoaded", function() {
     catalog.style.transform = `translateX(${newPosition}px)`;
 }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  var navToggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.nav');
+
+  navToggle.addEventListener('click', function() {
+      nav.classList.toggle('active');
+  });
+});
