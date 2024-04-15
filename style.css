@@ -1,5 +1,7 @@
 * {
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* Hide all slides by default */
 .slideshow {
@@ -63,6 +65,27 @@
 }
 .nav ul li a:last-child {
   margin-right: 0;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(230, 247, 232, 0);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: -10px o 10px rgb(2, 2, 48);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li a {
+  width: 100%;
 }
 .header {
   margin: 0 auto;
@@ -213,7 +236,9 @@ background: radial-gradient(circle, rgba(12,190,32,1) 24%, rgba(0,39,255,1) 51%,
   position: relative;
   background-color: rgb(34, 10, 245);
 }
-
+body {
+  min-height: 100vh;
+}
 .catalog {
   display: inline-block;
 }

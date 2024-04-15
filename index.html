@@ -27,9 +27,41 @@
         <img src="MY PERSONAL LOGO.png" alt="my web logo" style="height: 70px; width: 70px;">
        <h2>GOODNESS ONONOGBU</h2>
         </div>
+        <div class="sidebar">
+          <nav>
+            <ul>
+            <div>
+              <li onclick=hideSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+              </li>
+            <li class="dropdown">
+              <a href="#" class="main-nav">CONTACT</a>
+              <!-- style in css to create dropdown menu for links in navigation -->
+              <div class="sub-nav">
+              <a href="mailto:ononogbugoodness@gmail.com" target="_blank">Email me</a>
+              <a href="https://www.linkedin.com/in/goodness-ononogbu-aicmc/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/GoodnessOno" target="_blank">GitHub Profile</a>
+              <a href="https://www.kaggle.com/goodnessononogbu" target="_blank">Kaggle Profile</a>
+              <a href="https://www.youtube.com/channel/UCVlg3tFeoWXVI3TykBdCB8Q" target="_blank">Youtube channel</a>
+              
+              <!-- add calendly and linkedin links -->
+              </div>
+            </li>
+            <li class="dropdown"> 
+              <a href="aboutme.html" class="main-nav">ABOUT-ME</a>
+            </li>
+            <li class="dropdown">
+              <a href="projects.html" class="main-nav">PROJECTS</a>
+            </li>
+            <li class="dropdown">
+              <a href="sustainability.html" class="main-nav">GREEN TECH</a>
+            </li>
+          </div>
+          </ul>
+          </nav>
+        </div>
         <div class="nav">
         <nav>
-          <button class="nav-toggle" aria-label="Toggle Navigation">Navigation</button>
           <ul>
           <div>
           <li class="dropdown">
@@ -53,6 +85,9 @@
           </li>
           <li class="dropdown">
             <a href="sustainability.html" class="main-nav">GREEN TECH</a>
+          </li>
+          <li onclick=showSidebar()>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
           </li>
         </div>
         </ul>
